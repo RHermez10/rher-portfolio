@@ -1,14 +1,16 @@
 import { $Wrapper, $Button, $Animation } from "./styles"
 import { TypeAnimation } from 'react-type-animation';
+import profile from "../../assets/images/profile.png"
 function Home() {
     return (
         <$Wrapper id="home">
             <div>
-                <h1>RAMTA NAPOLEON HERMEZ</h1>
+                <img src={profile} alt="" />
+                <h1>RAMTA HERMEZ</h1>
                 <$Animation>
                     <TypeAnimation
                         sequence={[
-                            'Junior Frontend\n Developer',
+                            'Frontend\n Developer',
                         ]}
                         speed={35}
                     />

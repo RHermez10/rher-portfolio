@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const $Wrapper = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 5rem;
   text-align: center;
   background-color: var(--mainColor);
   color: var(--text);
@@ -8,21 +12,20 @@ export const $Wrapper = styled.div`
   padding: 0 2rem;
 
   > div {
-    padding-top: 16rem;
+
   }
 
   h1 {
     font-family: "Roboto Condensed", sans-serif;
-    font-size: 40px;
-    font-style: italic;
+    font-size: 60px;
   }
 `;
 
 export const $Animation = styled.div`
   font-family: "Roboto Condensed", sans-serif;
   font-size: 35px;
-  margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+          font-style: italic;
 
   @media (max-width: 600px) {
     span {
