@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const $ImageCard = styled.div`
-  position: relative;
-
+display: flex;
+gap: 12rem;
   img {
-    border-radius: 10px;
-    width: 200px;
+border-radius: 5px;
+    width: 300px;
     height: 300px;
   }
 
@@ -14,49 +14,28 @@ export const $ImageCard = styled.div`
   }
 `;
 
-export const $Overlay = styled.div`
-  position: absolute;
-  border-radius: 10px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 200px;
-  height: 300px;
-  transition: 0.5s ease;
-  opacity: 0;
-  background-color: var(--mainColor);
-
-  &:hover {
-    opacity: 100;
-  }
-
-  @media (max-width: 600px) {
-    margin: auto;
-    top: -39px;
-  }
-`;
-
-export const $Link = styled.a`
-  border: 2px solid var(--mainColor);
-  background-color: var(--mainColor);
-  color: white;
-  padding: 0.5rem 1.5rem;
-  text-decoration: none;
-  transition: 0.4s;
-  &:hover {
-    background-color: white;
-    color: var(--mainColor);
-  }
-`;
-
 export const $Title = styled.h4`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  opacity: 100;
+    margin-top: -22px;
   color: var(--text);
+  text-transform: uppercase;
+  font-style: italic;
   font-size: 30px;
-  transform: translate(-50%, -50%);
-  text-align: center;
+
 `;
+
+export const $Text = styled.p`
+color: white;
+max-width: 500px;
+font-size: 22px;
+
+`
+
+export const $InfoContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+
+`
+

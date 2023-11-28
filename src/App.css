@@ -21,13 +21,13 @@ button{
 :root {
 	--mainColor: rgb(9 13 32);
 	--secondaryColor: white;
-	--thirdColor: rgb(50 72 177);
+	--third-color: #00ffa1;
 	--fourthColor: rgb(49 82 255);
 	--text: white;
 }
 
 section{
-	text-align: center;
+
 }
 
 html {

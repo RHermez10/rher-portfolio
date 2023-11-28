@@ -11,9 +11,6 @@ function Projects() {
             <h1>PROJECTS</h1>
             <$Content>
                 <ImageCard image={wedding} title="Wedding app" link="https://github.com/RHermez10/wedding-camera-app" />
-                <ImageCard image={events} title="Events app" link="https://booking-ticket-tau.vercel.app/" />
-                <ImageCard image={hamster} title="hamster war" link="https://hamsters-projectt.onrender.com/" />
-                <ImageCard image={hangman} title="Hangman game" link="https://hangman-project-game.vercel.app/" />
             </$Content>
         </$ProjectWrapper>
     );
