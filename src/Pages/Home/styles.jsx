@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const $Wrapper = styled.div`
 display: flex;
@@ -11,26 +11,51 @@ gap: 5rem;
   height: 100vh;
   padding: 0 2rem;
 
-  > div {
-
-  }
-
   h1 {
+        margin-top: -25px;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 60px;
   }
+
+   @media (max-width: 600px) {
+
+    h1{
+          font-size: 40px;
+    }
+  }
 `;
 
-export const $Animation = styled.div`
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 35px;
+const test = keyframes`
+ to {
+    background-position: 200% center;
+  }
+`
+
+
+export const $Animation = styled.h3`
+
+ text-transform: uppercase;
+  // background-image: linear-gradient(
+  //   -225deg,
+  //   #c14aff 0%, #9502cf 29%, #8600ff 67%, #3f0af7 100%
+  // );
+
+  background-image: linear-gradient(
+    -225deg, #00ffa1 0%, #0ded9a 29%, #02a065 67%, #027d61 100%
+  );
+  background-size: 200% auto;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+
+  animation: ${test} 8s infinite;
+  
   margin-bottom: 40px;
           font-style: italic;
 
   @media (max-width: 600px) {
-    span {
-      white-space: pre-line;
-    }
+     font-size: 25px;
   }
 `;
 
