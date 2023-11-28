@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const $ProjectContent = styled.div`
   display: flex;
+    flex-direction: ${({ reverse }) => reverse && "row-reverse"};
   gap: 10rem;
   padding: 0rem 2rem;
   @media (max-width: 1024px) {
