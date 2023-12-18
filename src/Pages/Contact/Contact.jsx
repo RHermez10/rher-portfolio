@@ -4,8 +4,17 @@ import emailjs from "@emailjs/browser";
 import { CiMail } from "react-icons/ci";
 import { Toaster, toast } from "sonner";
 import { $FormWrapper, $Form, $SendButton, $MailIcon } from "./styles";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 function Contact() {
+
+    useEffect(() => {
+        AOS.init({ duration: 1000 })
+
+    }, [])
+
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
@@ -26,7 +35,7 @@ function Contact() {
     return (
         <>
             <Toaster position="top-center" />
-            <$FormWrapper id="contact">
+            <$FormWrapper data-aos="fade-up" data-aos-once="true" id="contact">
                 <div>
                     <h1>CONTACT</h1>
                     <h3>Get in touch!</h3>
@@ -43,7 +52,7 @@ function Contact() {
                     </div>
                     <div>
                         <label>Message</label>
-                        <textarea rows="10" name="message"></textarea>
+                        <textarea rows="7" name="message"></textarea>
                     </div>
                     <$SendButton>Send a message</$SendButton>
                 </$Form>

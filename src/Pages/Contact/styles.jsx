@@ -4,7 +4,7 @@ export const $FormWrapper = styled.section`
   width: 70%;
   margin: auto;
   display: flex;
-  padding: 12rem 0rem;
+  padding: 7rem 0rem;
   gap: 7rem;
 
   @media (max-width: 1100px) {
@@ -13,11 +13,14 @@ export const $FormWrapper = styled.section`
   }
 
   h1 {
-    color: var(--thirdColor);
+    text-align:center;
+    color: var(--mainColor);
     font-family: "Sora", sans-serif;
+    font-size: 30px;
   }
 
   h3 {
+     text-align:center;
     font-family: "Sora", sans-serif;
     font-size: 40px;
     margin-top: 25px;

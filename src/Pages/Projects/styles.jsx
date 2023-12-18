@@ -1,26 +1,20 @@
 import styled from "styled-components";
 
 export const $ProjectWrapper = styled.section`
-  padding: 15rem 0rem 8rem 0rem;
+background-color: var(--mainColor);
+padding: 10px 10px 60px 10px;
   h1 {
-    color: var(--thirdColor);
-    padding-bottom: 4rem;
+    text-align: center;
+    color: var(--third-color);
+    padding-bottom: 5rem;
+        margin-top: 6rem;
+    font-size: 30px;
   }
 `;
 
 export const $Content = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 5rem;
-
-  @media (max-width: 1110px) {
-    flex-wrap: wrap;
-    gap: 5rem;
-    width: 500px;
-    margin: auto;
-  }
-
-  @media (max-width: 600px) {
-    width: 0;
-  }
+  gap: 10rem;
 `;

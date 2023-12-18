@@ -14,6 +14,9 @@ export const $FooterWrapper = styled.div`
   a {
     text-decoration: none;
     color: white;
+        font-size: 18px;
+    font-weight: bold;
+        font-family: "Sora", sans-serif;
   }
 `;
 
