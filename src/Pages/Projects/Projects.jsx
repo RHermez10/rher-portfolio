@@ -21,12 +21,14 @@ function Projects() {
                     image={wedding}
                     title="Wedding app"
                     text="The wedding photographer is a collective camera ready to document an event from all the different perspectives of the guests. The images are then collected in a cloud service and can be enjoyed by the bride and groom."
+                    live="https://wedding-vesj.onrender.com"
                     github="https://github.com/RHermez10/wedding-camera-app"
                 />
                 <Project
                     image={cityGame}
                     title="City Clash"
                     text="City Clash is a fun and engaging spinoff of the classic KittenWar game, where users can vote for their favorite cities in head-to-head matches. City Clash is the perfect game to celebrate and showcase your favorite cities."
+                    live="https://city-game-usah.onrender.com"
                     github="https://github.com/RHermez10/cities-clash/tree/main"
                 />
             </$Content>
