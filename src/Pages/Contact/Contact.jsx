@@ -35,7 +35,7 @@ function Contact() {
     return (
         <>
             <Toaster position="top-center" />
-            <$FormWrapper data-aos="fade-up" id="contact">
+            <$FormWrapper data-aos="fade-up" data-aos-once="true" id="contact">
                 <div>
                     <h1>CONTACT</h1>
                     <h3>Get in touch!</h3>

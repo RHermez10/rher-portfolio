@@ -1,5 +1,4 @@
 import { $Wrapper, $Button, $Animation } from "./styles"
-import { TypeAnimation } from 'react-type-animation';
 import profile from "../../assets/images/profile.png"
 function Home() {
     return (

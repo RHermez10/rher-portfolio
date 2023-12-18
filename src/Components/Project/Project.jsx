@@ -2,14 +2,14 @@ import { $ProjectContent, $Title, $Text, $Link, $InfoContent } from "./styles";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
-export const Project = ({ image, title, text, link, reverse }) => {
+export const Project = ({ image, title, text, github, reverse }) => {
 
     useEffect(() => {
         AOS.init({ duration: 1000 })
 
     }, [])
     return (
-        <$ProjectContent data-aos="zoom-in" reverse={reverse}>
+        <$ProjectContent data-aos="zoom-in" data-aos-once="true" reverse={reverse}>
             <img src={image} alt="img" />
             <$InfoContent  >
                 <$Title>{title}</$Title>
@@ -18,7 +18,7 @@ export const Project = ({ image, title, text, link, reverse }) => {
                     <$Link href="" target="_blank">Live Demo
 
                     </$Link>
-                    <$Link href={link}>
+                    <$Link href={github} target="_blank" >
                         Github
                     </$Link>
                 </div>
