@@ -14,6 +14,7 @@ function Projects() {
                     image={ettc}
                     title="ETC Cleaning AB"
                     text="Developed Website for ETC Cleaning AB, a premier cleaning service provider. The platform effortlessly showcases their expertise, offering clients a user-friendly experience to discover and connect with exceptional cleaning solutions."
+                    live="https://etc-cleaning.se/"
                     github="https://github.com/RHermez10/etc"
                 />
                 <Project
