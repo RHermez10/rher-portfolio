@@ -10,7 +10,7 @@ function Footer() {
             <$SocialMediaContent>
                 <a href="https://github.com/RHermez10" target="blank"> <BsGithub size={30} /> </a>
                 <a href="https://www.linkedin.com/in/ramta-napoleon-hermez-28738b239" target="blank"> <FaLinkedin size={30} /></a>
-                <a href="https://www.instagram.com/ramtahermez/" target="blank"> <BsInstagram size={30} /> </a>
+                <a href="https://www.instagram.com/ramtadeveloper/" target="blank"> <BsInstagram size={30} /> </a>
             </$SocialMediaContent>
         </$FooterWrapper>
     )
