@@ -8,7 +8,7 @@ import { $ProjectWrapper, $Content } from "./styles";
 function Projects() {
     return (
         <$ProjectWrapper id="projects">
-            <h1>PROJECTS</h1>
+            <h1>WORK</h1>
             <$Content>
                 <Project
                     image={ettc}
