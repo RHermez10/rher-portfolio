@@ -7,14 +7,14 @@ function Navigation() {
     const [open, setOpen] = useState(false);
     return (
         <$Header>
-            <$Logo>RHermez</$Logo>
+            <$Logo>Ramta Hermez</$Logo>
             <$Button onClick={() => setOpen(!open)}>
                 {open ? <FaTimes size={35} /> : <FaBars size={35} />}
             </$Button>
             <$Navigation open={open}>
                 <$NavLink onClick={() => setOpen(false)} href="#">HOME </$NavLink>
                 <$NavLink onClick={() => setOpen(false)} href="#about">ABOUT ME</$NavLink>
-                <$NavLink onClick={() => setOpen(false)} href="#projects">PROJECTS</$NavLink>
+                <$NavLink onClick={() => setOpen(false)} href="#projects">WORK</$NavLink>
                 <$NavLink onClick={() => setOpen(false)} href="#contact">CONTACT</$NavLink>
             </$Navigation>
         </$Header>
