@@ -1,8 +1,7 @@
 import { Project } from "../../Components/Project/Project";
 import wedding from "../../assets/images/weeding-app.png";
 import etc from "../../assets/images/etc.png";
-import cityGame from "../../assets/images/city-game.png";
-import ettc from "../../assets/images/ettc.png";
+import developer from "../../assets/images/developer-dashboard.png"
 import { $ProjectWrapper, $Content } from "./styles";
 
 function Projects() {
@@ -11,7 +10,7 @@ function Projects() {
             <h1>WORK</h1>
             <$Content>
                 <Project
-                    image={ettc}
+                    image={etc}
                     title="ETC Cleaning AB"
                     text="Developed Website for ETC Cleaning AB, a premier cleaning service provider. The platform effortlessly showcases their expertise, offering clients a user-friendly experience to discover and connect with exceptional cleaning solutions."
                     live="https://etc-cleaning.se/"
@@ -19,11 +18,11 @@ function Projects() {
                 />
                 <Project
                     reverse="reverse"
-                    image={cityGame}
-                    title="City Clash"
-                    text="City Clash is a fun and engaging spinoff of the classic KittenWar game, where users can vote for their favorite cities in head-to-head matches. City Clash is the perfect game to celebrate and showcase your favorite cities."
-                    live="https://city-game-usah.onrender.com"
-                    github="https://github.com/RHermez10/cities-clash/tree/main"
+                    image={developer}
+                    title="Developer Dashboard"
+                    text="Developer Dashboard is a productivity application built with Next.js, TypeScript, Tailwind CSS, and Zustand. It allows developers to manage projects, track job applications, and visualize skill progress while showcasing responsive design, state management, accessibility, and performance optimization."
+                    live="https://developer-app-alpha.vercel.app/"
+                    github="https://github.com/RHermez10/developer-app"
                 />
                 <Project
                     image={wedding}
